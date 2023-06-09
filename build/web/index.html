@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>VENDAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./Style/style.css">
+        
+        <script type="text/javascript">
+            function carregarconsultartodos() {
+                window.location = "/VENDAS/controle_vendas?op=CONSULTAR TODOS"
+            }
+        </script>
+    </head>
+    <body>
+    <form name="f1" action="controle_vendas" method="GET">
+        <div><h1>CRUD VENDAS</h1></div>
+        <label for="txtid">ID:</label>
+        <input type="text" name="txtid"><br>
+
+        <label for="txtdata_venda">DATA VENDA:</label>
+        <input type="text" name="txtdata_venda"><br>
+
+        <label for="txtvalor_venda">VALOR VENDA:</label>
+        <input type="text" name="txtvalor_venda"><br><br>
+
+        <label for="txtcliente">CLIENTE:</label>
+        <input type="text" name="txtcliente"><br><br>
+
+        <label for="txtproduto">PRODUTO:</label>
+        <input type="text" name="txtproduto"><br><br>
+
+        <label for="txtquantidade">QUANTIDADE:</label>
+        <input type="text" name="txtquantidade"><br><br>
+
+        <label for="txtforma_pagamento">FORMA PAGAMENTO:</label>
+        <input type="text" name="txtforma_pagamento"><br><br>
+
+        <label for="txtstatus_venda">STATUS VENDA:</label>
+        <input type="text" name="txtstatus_venda"><br><br>
+
+        <label for="txtvendedor">VENDEDOR:</label>
+        <input type="text" name="txtvendedor"><br><br>
+
+        <label for="txtcanal_vendas">CANAL DE VENDAS:</label>
+        <input type="text" name="txtcanal_vendas"><br><br>
+
+        <input type="submit" name="op" value="CADASTRAR">
+        <input type="submit" name="op" value="DELETAR">
+        <input type="submit" name="op" value="ATUALIZAR">
+        <input type="submit" name="op" value="CONSULTAR BY ID">
+        <input type="submit" name="op" value="CONSULTAR TODOS">
+    </form>
+</body>
+</html>
